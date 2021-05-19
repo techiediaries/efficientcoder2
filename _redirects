@@ -1,0 +1,14 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://new.efficientcoder.net/* https://efficientcoder.net/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://blissful-bhabha-ae646e.netlify.com/* https://efficientcoder.net/:splat 301!
+
+
+https://new.efficientcoder.net/* / 404!
+
+https://new.efficientcoder.net/* https://efficientcoder.net/:splat 301!
+
+https://efficientcoder.net/angular-tutorial-build-an-example-app-with-angular-cli-router-httpclient-and-angular-material/  https://efficientcoder.net/angular/angular-9-8-tutorial-build-an-example-app-with-angular-cli-router-httpclient-and-angular-material/ 301!
