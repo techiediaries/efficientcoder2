@@ -3,11 +3,11 @@ title_left    : "Efficient"
 title_right   : "Coder" # default: ""
 description   : "Learn modern web development."
 keywords      : "Web development angular vuejs react"
-url           : https://heiswayi.github.io/thinkspace # site url
+url           : https://efficientcoder.net # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
-google_analytics  : UA-XXXXX-XX
+google_analytics  : UA-74071120-3
 twitter_username  : "efficientcoder"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 disqus_shortname  : ""
