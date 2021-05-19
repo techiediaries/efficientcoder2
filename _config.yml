@@ -1,14 +1,14 @@
 # Site settings
-title_left    : "Efficient"
-title_right   : "Coder" # default: ""
+title_left    : "Ahmed"
+title_right   : "Bouchefra" # default: ""
 description   : "Learn modern web development."
 keywords      : "Web development angular vuejs react"
-url           : https://heiswayi.github.io/thinkspace # site url
+url           : https://www.ahmedbouchefra.com # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
 google_analytics  : UA-XXXXX-XX
-twitter_username  : "efficientcoder"
+twitter_username  : "ahmedbouchefra"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 disqus_shortname  : ""
 postshare_enabled : false
@@ -28,7 +28,7 @@ sass:
 
 # Author settings
 author:
-  name     : "Efficient Coder"
+  name     : "Ahmed Bouchefra"
 
 plugins:
   - jekyll-sitemap
@@ -37,8 +37,8 @@ plugins:
 
 # navbar pages
 navbar:
-  - slug : about
-    title: About
+  - slug : contact
+    title: Contact
   - slug : blog
     title: Blog
 
