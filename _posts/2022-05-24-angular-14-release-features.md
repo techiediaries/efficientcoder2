@@ -21,6 +21,51 @@ The Angular team at Google has announced that they intend to release Angular ver
 
 The release candidate 1, also known as Angular version 14.0.0-rc.1, was made available to the public on May 18th, 2022.
 
+## Update to Angular CLI v4
+
+The Angular 14 version has not yet been made available to the public.
+
+However, we can still install Angular version 14 with the `next` flag.
+
+Simply, open a new command line interface and run the following command:
+
+```bash
+$ npm install -g @angular/cli@next
+```
+
+You can verify the installed version using the following command:
+
+```bash
+ng v 
+```
+
+You should see a similar output:
+
+```bash
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 14.0.0-rc.1
+Node: 16.13.1
+Package Manager: npm 8.1.2
+OS: win32 x64
+
+Angular:
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1400.0-rc.1 (cli-only)
+@angular-devkit/core         14.0.0-rc.1 (cli-only)
+@angular-devkit/schematics   14.0.0-rc.1 (cli-only)
+@schematics/angular          14.0.0-rc.1 (cli-only)
+```
+
 ## Principal features of Angular 14
 
 Angular 14 has a plethora of a new features that can make angular developers lives much easier especially when it comes to smplify how we write and design apps and reduce the boilerplate code and the complexity of the framework.
@@ -53,6 +98,35 @@ bootstrapApplication(AppComponent, {}).catch(err => console.error(err));
 We simply set the `standalone` property to true to make the component standalone.
 
 ## The `inject()` function
+
+We may retrieve a reference for a token from the injector that is currently active by using the `inject()` function that Angular provides. However, it could only be called in services and factory providers.
+
+With Angular 14, we can call the inject function inside components, directives, and pipes. This paves the way for a whole new set of opportunities and possibilities. We are able to design functions that can be reused by using the Angular's dependendcy injection.
+
+Angular 14's inject function will fundamentally transform the way in which we make use of services. There are a lot of different things we could do with it.
+
+Here is an example of how we can turn `HttpClient.get` into a method that may be reused in other contexts. There is no longer a requirement for a constructor for a basic get request:
+
+```ts
+import { inject } from '@angular/core';
+import { HttpClient } from '@angular/http/client';
+
+function get(url: string) {
+  return inject(HttpClient).get(url);
+}
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: true,
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent{
+  data$ = get('YOUR_URL');
+}
+```
+
+
 
 ## Conclusion
 
