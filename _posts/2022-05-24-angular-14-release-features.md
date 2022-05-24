@@ -2,11 +2,18 @@
 layout: post
 title: "Angular 14 release and features"
 tags: [angular, angular-14]
-excerpt: ""
+excerpt: "After Angular v13 was made available to the public in November of 2021, the following major update will be Angular 14 and will be released in June 2022 with new features that include standalone components, cli auto-completion and typed reactive forms"
 ---
 Hot news for angular developers! The Angular 14 version will be released soon packed with revolutionary and exiting new features.
 
 After Angular v13 was made available to the public in November of 2021, the following major update will be Angular 14.
+
+As a recap, these are the most important new features of Angular 14:
+
+
+- Standalone components
+- inject()
+- Typed forms
 
 ## Date of release for the Angular 14 version
 
@@ -26,6 +33,28 @@ As stated, Angular 14 brings some amazing new features such as standalone compon
 
 This also brings things closer to how we design apps with popular user interface libraries such as React.
 
-The following is a list of the Major Features included in Angular 14:
+The use of NgModules may be avoided with the help of standalone components, directives, and pipes. This will result in an improved authoring experience.. The new standalone design may be adopted in a gradual and optional manner by already existing apps without causing any breaking changes.
 
-Standalone components with strictly typed reactive forms and optional NgModule extended diagnostics in the compiler
+There is a preview version of the standalone component functionality available for developers so there is a possibility that it may evolve before being stable.
+
+Here is an example of a standalone component:
+
+```ts
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: true,
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {}
+bootstrapApplication(AppComponent, {}).catch(err => console.error(err));
+```
+
+We simply set the `standalone` property to true to make the component standalone.
+
+## The `inject()` function
+
+## Conclusion
+
+Building Angular apps is made easier starting with version 14, thanks to the introduction of standalone components. 
+
