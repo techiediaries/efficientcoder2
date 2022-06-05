@@ -29,7 +29,6 @@ Rx.Observable
 
 ```
 
-Copy
 
 ### Synchronous vs Asynchronous
 
@@ -52,8 +51,6 @@ console.log('After');
 // After
 
 ```
-
-Copy
 
 If you want however, you can make it asynchronous using an async scheduler:
 
@@ -160,8 +157,6 @@ Rx.Observable
 
 ```
 
-Copy
-
 ## DOM Nodes
 
 Here’s a quick example where a collection of 3 DOM nodes are transformed into an observable and mapped over to extract only the  textContent:
@@ -199,8 +194,6 @@ Rx.Observable
   // !
 
 ```
-
-
 
 Instead, to convert a string as a single value, you’ll want to use the  of  operator:
 
