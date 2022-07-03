@@ -7,7 +7,7 @@ date:   2022-07-03
 
 ![Angular 14 Tutorial & Example — Upload files with FormData, HttpClient, RxJS, and Material ProgressBar](https://miro.medium.com/max/815/1*HeFIRjp6D5-MDhITi2Uh7g.png)
 
-In this tutorial, we’ll see by example how to upload multiple image files using  **FormData**,  **HttpClient** (for posting  **multipart/form-data**), Angular 14 and TypeScript.
+[Angular 14 is released with new features](https://efficientcoder.net/angular-14-release-features/). In this tutorial, we’ll see by example how to upload multiple image files using  **FormData**,  **HttpClient** (for posting  **multipart/form-data**), Angular 14 and TypeScript.
 
 We’ll see how to use Angular Material  **ProgressBar** for indicating activity when uploading images and how to use HttpClient along with with the RxJS  **map()**  method to listen for file upload progress events.
 
