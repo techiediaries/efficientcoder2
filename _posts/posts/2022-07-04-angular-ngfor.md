@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Angular 9/8/7 ngFor with Index and trackBy Example"
-categories: angular
-date:   2019-12-27
+title:  "Angular ngFor with Index and trackBy Example"
+date:   2022-07-04
 ---
 
 In this article, we'll see by examples how to use the `ngFor` directive to iterate over arrays of data and even objects in Angular templates.

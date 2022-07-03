@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Angular 14 Tutorial & Example — Upload Files with FormData, HttpClient, RxJS, and Material ProgressBar"
-categories: angular
 date:   2022-07-03
 ---
 
