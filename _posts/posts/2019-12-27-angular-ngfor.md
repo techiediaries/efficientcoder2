@@ -5,9 +5,16 @@ categories: angular
 date:   2019-12-27
 ---
 
-In this post, we'll see by examples how to use the `ngFor` directive to iterate over arrays of data and even objects in Angular templates.
+In this article, we'll see by examples how to use the `ngFor` directive to iterate over arrays of data and even objects in Angular templates.
 
-## What is ngFor in Angular Template Syntax?
+You'll read about the following subjects:
+
+- Introducing Angular ngFor
+- How to Use Angular ngFor
+- The Index of ngFor Elements
+- The ngFor trackBy 
+
+## Introducing Angular ngFor
 
 Angular makes use of HTML for templates associated with components which eventually represent the views of your front-end application. 
 
@@ -17,7 +24,7 @@ Since HTML doesn't have a built-in template language, Angular extends HTML with 
 
 The `ngFor` allows you to loop through an array of data directly in the HTML template. The array must be present in the associated component.
 
-## How to Use ngFor in Angular Templates?
+## How to Use Angular ngFor
 
 Let's now see how to use the ngFor directive by example.
 
@@ -145,7 +152,7 @@ We can simply identify each element in a unique way using its `id`.
 
 ## Conclusion
 
-We can use the ngFor directive to iterate over arrays of data right in the Angular's component template.
+We can use the Angular ngFor directive to iterate over arrays of data right in the Angular's component template.
 
 We can use other features like `index`, `first`, `last` and `trackBy` to get the index of the current element, the first and last elements and for tracking the addition or removal of the array elements for performane reasons.  
 

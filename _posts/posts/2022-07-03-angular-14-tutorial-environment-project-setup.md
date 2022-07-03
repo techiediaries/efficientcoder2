@@ -104,7 +104,6 @@ I won’t go into modules and components in this tutorial. I will look at those 
 ## Serving the Angular 14 Application
 
 You have used the Angular 14 command-line interface to generate an Angular 14 app. It generates a root module and component needed to start an Angular 14 web app. To build and start the Angular 14 app, go to the terminal, switch to the directory of your Angular 14 workspace and execute  `ng serve -o`. This builds the application and starts a live reload development server to serve the application files.  
-![initial-angular-screen (002)](https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2019/2019-08/initial-angular-screen-(002).png?sfvrsn=a9da7ace_1 "initial-angular-screen (002)")
 
 
 The  `ng serve`  command is used to build and serve the Angular 14 application. Identical to the other commands you’ve used here so far, this also has a couple of choices. The  `-o`  option you just used will open the application in the web browser when it’s done creating the application. There are a host of other options you can use. You can see more from the  [documentation](https://angular.io/command-line interface/serve).
