@@ -5,7 +5,7 @@ title:  "Angular 14 Components and NgModules"
 
 In this tutorial, We'll learn about Angular 14 components and modules, then walk you through adding some components for the expense tracker app we will create together.  
   
-Angular 14 is a framework for creating front-end applications using HTML, CSS and JavaScript. It is one of the top JavaScript frameworks for building dynamic web applications. In a  [previous tutorial](https://www.efficientcoder.com/angular-14-tutorial-environment-project-setup), I talked about some Angular 14 command-line interface basics, set up an Angular 14 project, and looked at some of the configurations for an Angular 14 project.
+Angular 14 is a framework for creating front-end applications using HTML, CSS and JavaScript. It is one of the top JavaScript frameworks for building dynamic web applications. In our previous [Angular 14 tutorial](https://efficientcoder.net/angular-14-tutorial-environment-project-setup/), I talked about some Angular 14 command-line interface basics, set up an Angular 14 project, and looked at some of the configurations for an Angular 14 project.
 
 In this tutorial, We'll learn about Angular 14 components and modules, then walk you through adding some components for the expense tracker app we will build together. If you skipped the previous tutorial, you can download the source code on  [GitHub](https://github.com/pmbanugo/expense-tracker-angular)  and copy the files from  `src-part-1`  into the  `src`  folder, in order to follow along.
 
