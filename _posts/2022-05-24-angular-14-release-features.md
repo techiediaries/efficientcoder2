@@ -126,7 +126,7 @@ export class AppComponent{
 }
 ```
 
-
+You can also read more about [angular 14 features](https://angulargraphqlbook.com/angular-14-release-date-features/) here.
 
 ## Conclusion
 
