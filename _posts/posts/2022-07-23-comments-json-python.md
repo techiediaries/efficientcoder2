@@ -3,7 +3,7 @@ layout: post
 title: "Removing Comments from JSON with Python"
 image: "images/content/python.png"
 excerpt: "How to remove comments from JSON files with Python"
-date: 2020-09-05 
+date: 2022-07-23
 tags : [python]
 ---
 
