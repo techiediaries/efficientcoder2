@@ -13,7 +13,7 @@ JSON doesn't permit comments by design. As explained by its creator [Douglas Cro
 
 But he also stated that you can use external or built-in tools to pre-parse JSON files and remove any comments before the actual parsing takes place.
 
-In this short article, we'll see how you can remove comments from JSON files using Python code. 
+In this short article we'll see how you can remove comments from JSON files using Python code. 
 
 ## How to Read JSON Files with Python
 
