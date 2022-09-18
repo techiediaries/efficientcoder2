@@ -1,22 +1,22 @@
-# How to get started using Angular with Contentful
+# Angular 14 with Contentful tutorial
 
 This post will show you how to use Contentful in conjunction with Angular to create a full-stack application.
 
 Contentful is a cloud-based content management platform for organizing and managing contents which can then be accessed through a variety of platforms, such as a website and a mobile app.
 
-When it comes to building client-side apps or providing content creation and management services, both Angular and Contentful are popular choices.
+When it comes to building client-side apps or providing content creation and management services, both Angular 14 and Contentful are popular choices.
 
-One of the main advantages of [Angular](https://angular.io/) is that it provides a uniform way to write and share code, as well as the ability to create apps that can be used on the web, mobile web, native mobile, and the desktop.
+One of the main advantages of [Angular 14](https://angular.io/) is that it provides a uniform way to write and share code, as well as the ability to create apps that can be used on the web, mobile web, native mobile, and the desktop.
 
-Taking advantage of the current Web Platform's maximum performance as well as new approaches and APIs such as [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) and [Angular Universal](https://angular.io/guide/universal) for server-side rendering, Angular offers a number of benefits in terms of both performance and productivity. 
+Taking advantage of the current Web Platform's maximum performance as well as new approaches and APIs such as [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) and [Angular Universal](https://angular.io/guide/universal) for server-side rendering, Angular 14 offers a number of benefits in terms of both performance and productivity. 
 
-It also includes high-quality developer tools that simplify the process of developing features in an effective ways and comes with its own [template syntax](https://angular.io/guide/template-syntax) that extends HTML, and can be further expanded with custom components. Additionally, popular integrated development environment (IDE) and text editor provides Angular-specific feedback and help for its users. You won't have to worry about getting stuck in the ins and outs of the coding process in order to create powerfull apps; instead, you can concentrate on implementing your application idea.
+It also includes high-quality developer tools that simplify the process of developing features in an effective ways and comes with its own [template syntax](https://angular.io/guide/template-syntax) that extends HTML, and can be further expanded with custom components. Additionally, popular integrated development environment (IDE) and text editor provides Angular 14-specific feedback and help for its users. You won't have to worry about getting stuck in the ins and outs of the coding process in order to create powerfull apps; instead, you can concentrate on implementing your application idea.
 
-Angular is the technology that powers the frontend of Google applications that are utilized by millions of people all around the world because to its scalable architecture and its productivity-enhancing capabilities.
+Angular 14 is the technology that powers the frontend of Google applications that are utilized by millions of people all around the world because to its scalable architecture and its productivity-enhancing capabilities.
 
 Contentful is a headless content management system that offers project-specific foundation for the purpose of managing the contents of a website.
 
-It is headless, or independent of the front-end, enabling you to use the backend and content infrastructure with any framework, including Angular, React, Vue, etc.
+It is headless, or independent of the front-end, enabling you to use the backend and content infrastructure with any framework, including Angular 14, React, Vue, etc.
 
 It allows you to add and update information that will be displayed on the frontend of your website or mobile application. It also saves you the time and effort of developing your own backend – which requires knowing a backend language/platform such as Python or Node.js and database administration – and offers different tools that assist developers interface the frontend – a website or application – with the backend.
 
@@ -41,24 +41,24 @@ Ou Job model has the following fields and types:
 -   Date: Date & time
 -   Skills: Short Text & List 
     
-After you’ve created and published your job listings. We will now walk you through the process of fetching them through the API and display them with Angular.
+After you’ve created and published your job listings. We will now walk you through the process of fetching them through the API and display them with Angular 14.
 
 > Note: Before you can communicate with Contentful, you'll need an [API key, consisting of the Space ID, the Access Token, and the Entry ID](https://www.contentful.com/developers/docs/references/authentication/) that you can get from your Contentful space.
 
-## Create Angular Project
+## Create Angular 14 Project
 
-Now that we’ve created our content type and populated some data, let’s proceed to create the Angular project that will fetch and display the job listings from Contentful.
+Now that we’ve created our content type and populated some data, let’s proceed to create the Angular 14 project that will fetch and display the job listings from Contentful.
 
 In this section, we’ll see how to:
 
--   Create an Angular project and modify the page to display the retrieved content in an appropriate way.
--   Create an Angular service that can fetch the data.
+-   Create an Angular 14 project and modify the page to display the retrieved content in an appropriate way.
+-   Create an Angular 14 service that can fetch the data.
 -   Include the routes required to navigate the app.
 -   Connect the service to the page and display the fetched content.
     
 Before you start, you will need to have some prerequisites regarding your development environment.
 
-Since Angular requires the use of [Angular CLI](https://efficientcoder.net/install-angular-cli/) to scaffold the initial projects’ files and any necessary artifacts during the development of the project, you need to have recent versions of Node.js and npm installed on your development machine.
+Since Angular 14 requires the use of [Angular 14 CLI](https://efficientcoder.net/install-angular-cli/) to scaffold the initial projects’ files and any necessary artifacts during the development of the project, you need to have recent versions of Node.js and npm installed on your development machine.
 
 There are various ways that you use to install Node.js in your machine:
 
@@ -66,28 +66,28 @@ There are various ways that you use to install Node.js in your machine:
 -   Make use of the official package manager of your system.
 -   Use a Node version manager such as [NVM](https://github.com/nvm-sh/nvm) which will allow you to manage [multiple versions of Node](https://www.shabang.dev/multiple-versions-node-nvm/) on your development machine. We recommend using NVM.
  
-If you have Node installed on your machine; simply go to a command-line interface, Command Prompt or PowerShell (Windows) or bash terminal (Linux and macOS) and let’s get started by installing Angular CLI.
+If you have Node installed on your machine; simply go to a command-line interface, Command Prompt or PowerShell (Windows) or bash terminal (Linux and macOS) and let’s get started by installing Angular 14 CLI.
 
-Install the most recent version of the Angular CLI by running the following command:
+Install the most recent version of the Angular 14 CLI by running the following command:
 
 ```bash
 npm install -g @angular/cli  
 ```
-> Note: You may need to add sudo (for admin access) in macOS and Linux or use a command prompt with admin access in Windows to install the Angular CLI globally on your machine.
+> Note: You may need to add sudo (for admin access) in macOS and Linux or use a command prompt with admin access in Windows to install the Angular 14 CLI globally on your machine.
 
 After the installation, you’ll be able to use the `ng` tool from your terminal. 
 
-At the time of writing this article, Angular CLI **v13.3.7** is installed.
+At the time of writing this article, Angular CLI **v14** is installed.
 
 > If you want to use the same version installed in this tutorial at any time later, you simpy need to specify the version when installing the CLI .i.e   `npm install -g @angular/cli@13.3.7`. 
 
-Let’s create our Angular project. In the command-line interface run the following command:
+Let’s create our Angular 14 project. In the command-line interface run the following command:
 
 ```bash
 ng new angularcontentfuldemo --routing --style=css
 ```
 
-After pressing **Enter** in your keyboard, Angular CLI will create your initial project’s files and install the packages and log the process on the terminal which should have the following printed after project’s creation:
+After pressing **Enter** in your keyboard, Angular 14 CLI will create your initial project’s files and install the packages and log the process on the terminal which should have the following printed after project’s creation:
 
 ```bash
 ✔ Packages installed successfully.
@@ -100,7 +100,7 @@ Next, navigate inside the root folder of your project:
 cd angularcontentfuldemo  
 ```
 
-You can then serve your Angular application using the `ng serve` command as follows:
+You can then serve your Angular 14 application using the `ng serve` command as follows:
 
 ```bash
 ng serve  
@@ -135,9 +135,9 @@ npm install contentful bootstrap
 npm install @contentful/rich-text-types @contentful/rich-text-html-renderer
 ```
 
-We'll use contentful to connect with Contentful APIs and bootstrap for styling the Angular UI.
+We'll use contentful to connect with Contentful APIs and bootstrap for styling the Angular 14 UI.
 
-Next, let's add Bootstrap to our project. There are various ways to [add Bootstrap to Angular](https://www.techiediaries.com/add-angular-bootstrap/), in our case, we'll include bootstrap files via the `angular.json` file so go ahead and open the configuration file that exists at the root of the project and add the following line:
+Next, let's add Bootstrap to our project. There are various ways to [add Bootstrap to Angular 14](https://www.techiediaries.com/add-angular-bootstrap/), in our case, we'll include bootstrap files via the `angular.json` file so go ahead and open the configuration file that exists at the root of the project and add the following line:
 
 ```json
 "styles": [
@@ -279,7 +279,7 @@ const routes: Routes = [
 ```
  Here we define three routes -- the first route simply redirects the user to the second route which links to the JobListingsComponent.
  
-You can read more about routing in Angular from this [article](https://www.webtutpro.com/angular-12-routing-by-example-f0cfbdc7b0a8).
+You can read more about routing in Angular 14 from this [article](https://www.webtutpro.com/angular-12-routing-by-example-f0cfbdc7b0a8).
 
 Open the `src/app/job-listings/job-listings.component.ts` file and import the service and the other symbols as follows:
 
@@ -404,7 +404,7 @@ After that, we need to render the content in the component's template. Open the 
 You should notice that under the **How to apply** section, we are displaying the content of the `howToApply` field but we are getting `[object Object]` displayed. That's because this a Rich Text field which is a JSON format for handling complex content structures in a strongly typed manner in Contentful.
 Contentful provides many tools to help you work with the [Rich Text](https://www.contentful.com/developers/docs/concepts/rich-text/) feature and we've previously installed the `@contentful/rich-text-html-renderer` package which makes it easy to display rich text fields via a `documentToHtmlString()` function.
 
-Since, we are using Angular, we need to use the  function with a [custom pipe](https://angular.io/guide/pipes) that we can apply to the field in the component's template to display it correctly.
+Since, we are using Angular 14, we need to use the  function with a [custom pipe](https://angular.io/guide/pipes) that we can apply to the field in the component's template to display it correctly.
 Go back to your command-line interface and run the following command to generate a pipe:
 
 ```bash
@@ -438,7 +438,7 @@ Since the result of applying our custom `toHtml` pipe to the `howToApply` field 
 
 ## Conclusion
 
-We learned how to use Contentful as our Angular application's backend for managing content.
+We learned how to use Contentful as our Angular 14 application's backend for managing content.
 
 Software like Wordpress sparked the rise of content management systems. Even though Wordpress is the most popular content management system in the world, Contentful allows you to accomplish more and separate your front-end or view layer from managing content. For more information, you can read [Is Contentful a WordPress alternative?](https://www.contentful.com/blog/2020/03/26/contentful-wordpress-alternative/) or [The Problems with Headless WordPress](https://www.webtutpro.com/the-problems-with-headless-wordpress-196630f5f8f6).
 
