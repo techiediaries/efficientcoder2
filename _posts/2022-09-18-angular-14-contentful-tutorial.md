@@ -1,6 +1,11 @@
-# Angular 14 with Contentful tutorial
+---
+layout: post
+title: "Angular 14 with Contentful tutorial"
+tags: [angular]
+excerpt: "This post will show you how to use Contentful in conjunction with Angular 14 to create a full-stack application."
+--- 
 
-This post will show you how to use Contentful in conjunction with Angular to create a full-stack application.
+This post will show you how to use Contentful in conjunction with Angular 14 to create a full-stack application.
 
 Contentful is a cloud-based content management platform for organizing and managing contents which can then be accessed through a variety of platforms, such as a website and a mobile app.
 
