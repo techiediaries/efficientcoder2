@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angular 14 Service for communicating with Contentful CMS"
+title: "[3] Angular 14 Service for communicating with Contentful CMS"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this tutorial, let's now create the service that will encapsulate the code for communicating with Contentful." 
 categories: [angular-headless-cms]

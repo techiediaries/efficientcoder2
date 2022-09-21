@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mocking GraphQL with Apollo Server"
+title: "[11] Mocking GraphQL with Apollo Server"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "" 
 categories: [webdev]

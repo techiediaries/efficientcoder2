@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using GraphQL and Apollo for front- and back-end integration"
+title: "[4] Using GraphQL and Apollo for front- and back-end integration"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "We know what Node is and that our backend server will be run by Express.js, we need to know what GraphQL is and how it fits into this stack." 
 categories: [webdev]

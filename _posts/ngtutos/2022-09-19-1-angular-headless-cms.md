@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build Angular 14 apps with Contentful headless CMS"
+title: "[1] Build Angular 14 apps with Contentful headless CMS"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this tutorial, you'll learn how to build a full-stack app using Contentful and Angular 14." 
 categories: [angular-headless-cms]

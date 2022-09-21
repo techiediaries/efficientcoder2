@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " Setup Angular 14 environment variables"
+title: "[2] Setup Angular 14 environment variables"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this tutorial, we'll look at how to set up environment variables in Angular 14 and bootstrap for UI styling." 
 categories: [angular-headless-cms]

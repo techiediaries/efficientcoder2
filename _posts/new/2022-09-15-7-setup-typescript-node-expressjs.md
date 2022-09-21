@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setup TypeScript with Node.js & Express.js"
+title: "[7] Setup TypeScript with Node.js & Express.js"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this article, we'll proceed to the next step , which is setting up the necessary requisites, typescript and ts-node with Node.js and Express.js, for development" 
 categories: [webdev]

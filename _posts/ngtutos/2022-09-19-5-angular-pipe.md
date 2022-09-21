@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Transform data with Angular pipes"
+title: "[5] Transform data with Angular pipes"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this tutorial, we'll see how to use a pipe in Angular 14 to transform and display data in our components' templates. " 
 categories: [angular-headless-cms]

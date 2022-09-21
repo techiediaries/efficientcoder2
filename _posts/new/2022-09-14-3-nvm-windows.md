@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using NVM on Windows"
+title: "[3] Using NVM on Windows"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "How to use NVM on Windows" 
 categories: [webdev]

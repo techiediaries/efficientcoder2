@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Watch and compile TypeScript code to JavaScript"
+title: "[8] Watch and compile TypeScript code to JavaScript"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "Now, with ts-node, we don't need to compile TypeScript before running it. While this is ideal for development, it will require us to restart the script every time we make a change." 
 categories: [webdev]

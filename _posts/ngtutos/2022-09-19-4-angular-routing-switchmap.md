@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angular 14 Routing and RxJS switchMap"
+title: "[4] Angular 14 Routing and RxJS switchMap"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this tutorial, we'll continue building our app with Angular 14 and Contentful. We'll look at how to access route parameters using `ParamMap` and since our previous service method returns an observable, we'll see how to flatten the observable with the `switchMap` operator and subscribe to the resulting observable to get the fetched entry from the headless CMS and assign it to the jobListing property that we'll define in our Angular component below." 
 categories: [angular-headless-cms]

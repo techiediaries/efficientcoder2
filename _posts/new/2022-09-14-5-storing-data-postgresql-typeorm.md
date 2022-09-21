@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Storing data with PostgreSQL and TypeORM"
+title: "[5] Storing data with PostgreSQL and TypeORM"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "A PostgreSQL database will be used to store the information. While a local PostgreSQL server will be used during development, a cloud-hosted relational database such as Amazon Relational Database Service (Amazon RDS) or another service of your choosing can be used during production." 
 categories: [webdev]

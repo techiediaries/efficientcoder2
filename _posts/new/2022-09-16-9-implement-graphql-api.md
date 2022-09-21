@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GraphQL APIs with Apollo Server & Apollo Studio"
+title: "[9] GraphQL APIs with Apollo Server & Apollo Studio"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "As an open source GraphQL server, Apollo Server is community-maintained and will be the basis for our GraphQL API development in this article." 
 categories: [webdev]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setup the server with Node.js/Express.js/Apollo"
+title: "[6] Setup the server with Node.js/Express.js/Apollo"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In the previous articles, we installed Node.js and PostgreSQL on our development machine. In this article, we'll begin by developing the API that the frontend app will consume." 
 categories: [webdev]

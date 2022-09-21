@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GraphQL APIs with Apollo Server & Apollo Studio [Part 2]"
+title: "[10] GraphQL APIs with Apollo Server & Apollo Studio [Part 2]"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "With our Apollo Server now up and running, we can shift our focus to creating the GraphQL schema for the community app. Users, friends, posts, comments, likes, and notifications are what we'll be focusing on." 
 categories: [webdev]
