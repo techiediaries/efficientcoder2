@@ -4,7 +4,7 @@ title: "Python 3.13 in 2025 Breakthroughs: No-GIL, JIT, and iOS Support Explaine
 image: "/assets/images/python313news.webp"
 excerpt: "Python 3.13 brings No-GIL, JIT compilation, and iOS support. Find out how it changes Python development in 2025." 
 tags : [python]
-categories: [news, python]
+categories: [python]
 permalink: /news/python-313-2025-breakthroughs-no-gil-jit-ios-support-explained/
 canonical: "https://www.techiediaries.com/news/python-313-2025-breakthroughs-no-gil-jit-ios-support-explained/"
 ---
