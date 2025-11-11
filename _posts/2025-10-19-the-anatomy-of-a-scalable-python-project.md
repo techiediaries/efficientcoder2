@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: The Anatomy of a Scalable Python Project
@@ -132,4 +131,3 @@ The beauty of this is the clean separation of concerns. The API layer handles HT
 This structure lets you start small and add complexity later without making a mess. The boundaries are clear, which makes development faster, testing easier, and onboarding new team members a whole lot smoother.
 
 Of course, this is a starting point. You might need a `scripts/` folder for data migrations or other custom tasks. But this foundation... it's solid. It's been a game-changer for me, and I hope it can be for you too.
-```

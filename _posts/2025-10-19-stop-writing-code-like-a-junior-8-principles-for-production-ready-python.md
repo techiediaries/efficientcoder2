@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: Stop Writing Code Like a Junior: 8 Principles for Production-Ready Python
@@ -108,4 +107,4 @@ Finally, after all that, the highest goal is simplicity.
 Phew, that was a lot. But these patterns are what it takes to level up. It's a shift from just getting things done to building things that last.
 
 If you enjoyed this, let me know. I'd love to make more advanced videos like this one. See you in the next one.
-```
+
