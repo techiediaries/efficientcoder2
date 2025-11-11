@@ -3,7 +3,7 @@ layout: post
 title: "Python's New T-Strings Are a Game Changer. Here's Why."
 date: 2025-10-19
 video_url: https://youtu.be/vymJMn97wks?si=DQNdYvk-e1qCRBeF
-categories: [New in the Dev World, Web Development]
+categories: [python]
 ---
 
 How's it going, everyone?

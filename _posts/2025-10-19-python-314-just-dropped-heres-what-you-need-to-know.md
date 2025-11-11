@@ -3,7 +3,7 @@ layout: post
 title: "Python 3.14 Just Dropped: Here's What You Need to Know"
 date: 2025-10-19
 video_url: https://youtu.be/Vxqj2C1p_nU?si=sBXcM6W-OcSX5pNj
-categories: [New in the Dev World, Web Development]
+categories: [python]
 ---
 
 So, Python 3.14 is officially here.

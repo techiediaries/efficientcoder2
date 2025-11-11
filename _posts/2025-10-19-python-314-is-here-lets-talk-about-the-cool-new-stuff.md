@@ -3,7 +3,7 @@ layout: post
 title: "Python 3.14 is Here: Let's Talk About the Cool New Stuff"
 date: 2025-10-19
 video_url: https://youtu.be/yYUZRjf94qY?si=iwDB-vUTJc23il7q
-categories: [New in the Dev World]
+categories: [python]
 ---
 
 So, the wait is over. Python 3.14 has officially landed.

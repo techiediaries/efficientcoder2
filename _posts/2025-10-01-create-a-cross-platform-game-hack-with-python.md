@@ -2,7 +2,7 @@
 layout: post
 title: "Create a Cross-Platform Game Hack with Python"
 date: 2025-10-01
-categories: [Hacking & Security for Devs, Web Development]
+categories: [python]
 ---
 
 So, you want to create game hacks in Python that are universally compatible? This article is your guide. You will learn not only how to hack any game but also how to package your creation into an `.exe` file, making it accessible on any PC.

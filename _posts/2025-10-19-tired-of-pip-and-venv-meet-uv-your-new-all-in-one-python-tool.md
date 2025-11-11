@@ -3,7 +3,7 @@ layout: post
 title: "Tired of Pip and Venv? Meet UV, Your New All-in-One Python Tool"
 date: 2025-10-19
 video_url: https://youtu.be/AMdG7IjgSPM?si=CagpSr0Y4GJjKWhW
-categories: [New in the Dev World, Web Development]
+categories: [python]
 ---
 
 Hey there, how's it going?

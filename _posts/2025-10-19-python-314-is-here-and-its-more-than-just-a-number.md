@@ -3,7 +3,7 @@ layout: post
 title: Python 3.14 is Here, and It's More Than Just a Number
 date: 2025-10-19
 video_url: https://youtu.be/S_shhw4VV68?si=aXZeYwJn4ZpcjTHc
-categories: [New in the Dev World, Web Development]
+categories: [python]
 ---
 
 Python 3.14. It's finally here.

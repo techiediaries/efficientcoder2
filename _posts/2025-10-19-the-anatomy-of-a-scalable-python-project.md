@@ -3,7 +3,7 @@ layout: post
 title: The Anatomy of a Scalable Python Project
 date: 2025-10-19
 video_url: https://youtu.be/Af6Zr0tNNdE?si=GZm9iBAL1AsSBDjG
-categories: [Web Development]
+categories: [python]
 ---
 
 Ever start a Python project that feels clean and simple, only to have it turn into a tangled mess a few months later? Yeah, I've been there more times than I can count.
