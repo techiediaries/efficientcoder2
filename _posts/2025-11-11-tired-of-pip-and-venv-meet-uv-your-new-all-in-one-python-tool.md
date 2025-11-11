@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tired of Pip and Venv? Meet UV, Your New All-in-One Python Tool"
-date: 2025-10-19
+date: 2025-11-11
 video_url: https://youtu.be/AMdG7IjgSPM?si=CagpSr0Y4GJjKWhW
 categories: [python]
 ---
@@ -109,5 +109,5 @@ The smart caching alone is a huge win. If you have ten projects that all use Fla
 
 I've fully switched my workflow over to UV, and I can't see myself going back. It just gets out of the way and lets me focus on the code.
 
-So, what do you think? Have you tried it out? Does this sound like something that could simplify your workflow? Let me know in the comments!
+
 

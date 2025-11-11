@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Anatomy of a Scalable Python Project
-date: 2025-10-19
+date: 2025-11-11
 video_url: https://youtu.be/Af6Zr0tNNdE?si=GZm9iBAL1AsSBDjG
 categories: [python]
 ---
