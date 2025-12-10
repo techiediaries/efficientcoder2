@@ -2,7 +2,7 @@
 layout: post
 title: "The Efficient Way to Learn Python in 2026 (5 Prompts + A Free Book)"
 description: "Stop choosing between AI and books. Here is how to combine the 10xdev python book with 5 smart AI prompts to fast-track your learning."
-date: 2025-12-12
+date: 2025-12-10
 categories: [Education, Python, AI Learning]
 tags: [10xdev python book, learn python 2026, ai coding prompts, developer guide]
 author: "Ahmed Bouchefra"
