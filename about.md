@@ -1,7 +1,196 @@
 ---
-layout: page
+layout: null
 title: About
 permalink: /about/
----
+menu:
+  - title: Home
+    url: /
+  - title: Articles
+    url: /articles/
+  - title: About
+    url: /about/
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title | default: 'Efficient Coder' }}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="About Efficient Coder - My journey of learning and mastering Python in 2026.">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    
+    <style>
+        /* Minimalist, readable styling */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --muted-color: #666666;
+            --accent-color: #2c3e50;
+            --border-color: #eaeaea;
+            --code-bg: #f6f8fa;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 720px; /* Optimal reading width */
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header & Navigation */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .site-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .site-nav a {
+            color: var(--muted-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .site-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 480px) {
+            .site-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            
+            .site-nav {
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+
+        /* Page Specific Content Styling */
+        .page-content {
+            font-size: 1.125rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            letter-spacing: -0.02em;
+        }
+
+        h2, h3 {
+            color: var(--text-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .site-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--muted-color);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="{{ '/' | relative_url }}" class="site-title">Efficient Coder</a>
+        <nav class="site-nav">
+            {% for item in page.menu %}
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+        <article class="post">
+            <header class="post-header">
+                <h1 class="page-title">{{ page.title }}</h1>
+            </header>
+
+            <div class="post-content">
+                <p>Welcome to <strong>Efficient Coder</strong>. This space is dedicated to exploring the intersection of modern software development, minimalism, and lifelong learning.</p>
+
+                <h2>The 2026 Python Journey</h2>
+                
+                <p>As we navigate through 2026, the technological landscape is more dynamic than ever. Artificial intelligence, automation, and advanced data processing are no longer just buzzwords—they are the foundational tools of modern development.</p>
+                
+                <p>That is why the primary focus of this blog right now is <strong>mastering Python</strong>. From its clean syntax to its incredibly powerful ecosystem, Python remains the ultimate language for the efficient coder.</p>
+
+                <h3>What I'm Learning & Sharing</h3>
+                <ul>
+                    <li><strong>Modern Frameworks:</strong> Diving deep into asynchronous web development with FastAPI and optimizing legacy Django/Flask systems.</li>
+                    <li><strong>AI & Machine Learning:</strong> Integrating LLMs and building custom tools using Python's leading AI libraries.</li>
+                    <li><strong>Automation:</strong> Writing robust scripts to eliminate repetitive tasks and streamline workflows.</li>
+                    <li><strong>Data Structures & Algorithms:</strong> Solidifying the core computer science concepts that make code truly efficient.</li>
+                </ul>
+
+                <p>Whether you're a beginner writing your first <code>print("Hello, World!")</code> or an experienced developer looking to catch up on Python's 2026 features, I invite you to join me on this journey. Let's write cleaner, faster, and more efficient code together.</p>
+
+                <p>— <em>The Efficient Coder</em></p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; {{ 'now' | date: "%Y" }} Efficient Coder. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

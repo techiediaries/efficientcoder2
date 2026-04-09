@@ -1,30 +1,225 @@
 ---
-layout: default
+# Navigation menu defined directly in the layout frontmatter
+menu:
+  - title: Home
+    url: /
+  - title: Articles
+    url: /articles/
+  - title: About
+    url: /about/
 ---
-
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-  </header>
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-
-    {% capture category %}{{ page.categories | first }}{% endcapture %}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Efficient Coder</title>
     
-  </hr>
-    <h5>In the same series:</h5>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    
+    <style>
+        /* Minimalist, readable styling */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --muted-color: #666666;
+            --accent-color: #2c3e50;
+            --border-color: #eaeaea;
+            --code-bg: #f6f8fa;
+        }
 
-    {% for post in site.categories[category] %}     
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 720px; /* Optimal reading width */
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    <a href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-    </a>
-    </br>
-    {% endfor %}
+        /* Header & Navigation */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+        }
 
-    {% include post-share.html %}
-  </div>
-</article>
+        .site-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
 
-{% include comments.html %}
+        .site-nav {
+            display: flex;
+            gap: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .site-nav a {
+            color: var(--muted-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .site-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Post Header */
+        .post-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .post-title {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.02em;
+        }
+
+        .post-meta {
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Content Styling */
+        .post-content {
+            font-size: 1.125rem;
+        }
+
+        .post-content h2, .post-content h3, .post-content h4 {
+            color: var(--text-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .post-content a {
+            color: var(--accent-color);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .post-content blockquote {
+            border-left: 4px solid var(--border-color);
+            padding-left: 1rem;
+            margin-left: 0;
+            color: var(--muted-color);
+            font-style: italic;
+        }
+
+        .post-content pre, .post-content code {
+            background-color: var(--code-bg);
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content code {
+            padding: 0.2em 0.4em;
+        }
+
+        .post-content pre {
+            padding: 1rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+        
+        .post-content pre code {
+            padding: 0;
+            background: transparent;
+        }
+
+        /* Syntax Highlighting (Rouge - GitHub Light Theme) */
+        .highlight { background: var(--code-bg); padding: 1rem; border-radius: 4px; overflow-x: auto; margin-bottom: 1.5rem; font-size: 0.9em; }
+        .highlight pre { margin: 0; padding: 0; background: transparent; border: none; }
+        .highlight code { padding: 0; background: transparent; }
+        .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs { color: #6e7781; font-style: italic; } /* Comments */
+        .highlight .err { color: #f6f8fa; background-color: #8250df; } /* Errors */
+        .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .kv { color: #cf222e; } /* Keywords */
+        .highlight .n, .highlight .nx, .highlight .py { color: #24292f; } /* Names */
+        .highlight .o, .highlight .ow { color: #0550ae; } /* Operators */
+        .highlight .p, .highlight .pi { color: #24292f; } /* Punctuation */
+        .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: #0a3069; } /* Strings */
+        .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo { color: #0550ae; } /* Numbers */
+        .highlight .nc { color: #953800; font-weight: bold; } /* Classes */
+        .highlight .nd { color: #8250df; } /* Decorators */
+        .highlight .nf, .highlight .fm { color: #8250df; font-weight: bold; } /* Functions */
+        .highlight .nt { color: #116329; } /* Tags */
+        .highlight .na { color: #1a7f37; } /* Attributes */
+
+        /* Footer */
+        .site-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--muted-color);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="/" class="site-title">Efficient Coder</a>
+        <nav class="site-nav">
+            <!-- Loop through the menu defined in this layout's frontmatter -->
+            {% for item in layout.menu %}
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+            <header class="post-header">
+                <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+                <p class="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                        {{ page.date | date: date_format }}
+                    </time>
+                    {% if page.author %}
+                        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+                    {% endif %}
+                </p>
+            </header>
+
+            <div class="post-content" itemprop="articleBody">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; {{ 'now' | date: "%Y" }} Efficient Coder. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
