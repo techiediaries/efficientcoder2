@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Stop Writing Code Like a Junior: 8 Principles for Production-Ready Python
+title: "Stop Writing Code Like a Junior: 8 Principles for Production-Ready Python"
 date: 2025-10-19
 video_url: https://youtu.be/qU3Rc6_B9es?si=LktH7yIgWdh05Ev6
 categories: [python]
 ---
+
 
 Let's be honest. There's a huge gap between writing code that *works* and writing code that's actually *good*. It's the number one thing that separates a junior developer from a senior, and it's something a surprising number of us never really learn.
 
